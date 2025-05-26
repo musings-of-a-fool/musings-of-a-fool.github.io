@@ -12,65 +12,88 @@
       font-style: normal;
     }
 
-    @font-face {
-      font-family: 'TT Commons Pro DemiBold';
-      src: url('./TT-Commons-Pro-DemiBold.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-    }
+ @font-face {
+  font-family: 'TT Commons Pro DemiBold';
+  src: url('./TT-Commons-Pro-DemiBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: white;
-      color: black;
-      font-family: 'TT Commons Pro', sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 90vh;
-      padding: 1rem;
-      font-size: 20px;
-      line-height: 1.5;
-    }
-    
-    .content {
-      max-width: 700px;
-      margin-top: 1rem;
-      text-align: left;
-    }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    font-family: 'TT Commons Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding: 1rem;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  .content {
+    max-width: 700px;
+    margin-top: 1rem;
+    text-align: left;
+  }
+  
+  .title {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-family: 'TT Commons Pro DemiBold', sans-serif;
+    font-size: 20px;
+  }
+  
+  .button-container {
+    margin-top: 2rem;
+  }
+  
+  .journal-button {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'TT Commons Pro DemiBold', sans-serif;
+    transition: background-color 0.2s;
+  }
+  
+  .journal-button:hover {
+    background-color: #f0f0f0;
+  }
+   </style>
+  </head>
+  <body>
+    <div class="title">Musings of a Fool</div>
+    <div class="content">
+      <p>This is not a religion.<br>
+      This is not doctrine.<br>
+      This is not a church.<br>
+      This is not ideology.<br>
+      This is not philosophy.<br>
+      This is not dogma.<br>
+      This is not a cult.<br>
+      This is not a manifesto.<br>
+      This is not a movement.<br>
+      This is not a brand.<br>
+      This is not a book.<br>
+      This is not a system.<br>
+      This is not final.<br>
+      </p>
+      <p>While my writing contains many of these themes,<br>
+      do not mistake it for anything other than what it is:</p>
+      <p>A collection of personal insights, reflections, and musings of a fool...<br>
+      ... tracing around a circle that has no center.</p>
+      <div class="button-container">
+        <button class="journal-button" onclick="location.href='journal.html'">View Journal</button>
+      </div>
+    </div>
+  </body>
+  </html>
 
-    .title {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      font-family: 'TT Commons Pro DemiBold', sans-serif;
-      font-size: 20px;
-    }
-  </style>
-</head>
-<body>
-  <div class="title">Musings of a Fool</div>
-  <div class="content">
-    <p>This is not a religion.<br>
-    This is not doctrine.<br>
-    This is not a church.<br>
-    This is not ideology.<br>
-    This is not philosophy.<br>
-    This is not dogma.<br>
-    This is not a cult.<br>
-    This is not a manifesto.<br>
-    This is not a movement.<br>
-    This is not a brand.<br>
-    This is not a book.<br>
-    This is not a system.<br>
-    This is not final.<br>
-    </p>
-    <p>While my writing contains many of these themes,<br>
-    do not mistake it for anything other than what it is:</p>
-    <p>A collection of personal insights, reflections, and Musings of a Fool...<br>
-    ... tracing around a circle that has no center.</p>
-  </div>
-</body>
-</html>
