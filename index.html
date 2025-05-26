@@ -7,8 +7,15 @@
   <style>
     @font-face {
       font-family: 'TT Commons Pro';
-      src: url('./TT-Commons-Pro-Regular.woff') format('truetype');
+      src: url('./TT-Commons-Pro-Regular.woff') format('woff');
       font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'TT Commons Pro DemiBold';
+      src: url('./TT-Commons-Pro-DemiBold.woff') format('woff');
+      font-weight: bold;
       font-style: normal;
     }
 
@@ -25,20 +32,22 @@
       min-height: 100vh;
       padding: 2rem;
       font-size: 20px;
+      line-height: 1.5;
     }
     
     .content {
       max-width: 700px;
       margin-top: 3rem;
-      text-align: left; /* <- this aligns the text left inside the box */
+      text-align: left;
     }
+
     .title {
       position: absolute;
       top: 1rem;
       left: 1rem;
-      font-weight: bold;
+      font-family: 'TT Commons Pro DemiBold', sans-serif;
+      font-size: 15px;
     }
-
   </style>
 </head>
 <body>
