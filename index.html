@@ -20,13 +20,18 @@
       font-family: 'TT Commons Pro', sans-serif;
       display: flex;
       flex-direction: column;
-      justify-content: left;
+      justify-content: center;
       align-items: center;
       min-height: 100vh;
-      text-align: center;
       padding: 2rem;
+      font-size: 14px;
     }
-
+    
+    .content {
+      max-width: 700px;
+      margin-top: 3rem;
+      text-align: left; /* <- this aligns the text left inside the box */
+    }
     .title {
       position: absolute;
       top: 1rem;
@@ -34,10 +39,6 @@
       font-weight: bold;
     }
 
-    .content {
-      max-width: 700px;
-      margin-top: 3rem;
-    }
   </style>
 </head>
 <body>
