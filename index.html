@@ -5,63 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Musings of a Fool</title>
   <style>
+    @font-face {
+      font-family: 'TT Commons Pro';
+      src: url('TT-Commons-Pro-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     body {
       margin: 0;
       padding: 0;
-      font-family: Georgia, serif;
       background-color: white;
       color: black;
+      font-family: 'TT Commons Pro', sans-serif;
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
-    }
-    header {
-      padding: 20px;
-      font-size: 1.2em;
-      font-weight: bold;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    main {
-      flex: 1;
-      display: flex;
+      justify-content: left;
       align-items: center;
-      justify-content: center;
+      min-height: 100vh;
       text-align: center;
-      padding: 40px;
+      padding: 2rem;
     }
+
+    .title {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      font-weight: bold;
+    }
+
     .content {
       max-width: 700px;
-      line-height: 1.8;
-      font-size: 1.1em;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
-  <header>Musings of a Fool</header>
-  <main>
-    <div class="content">
-      <p>This is not a religion.<br>
-      This is not doctrine.<br>
-      This is not the scaffolding for belief.<br>
-      This is not a church.<br>
-      This is not theology.<br>
-      This is not ideology.<br>
-      This is not philosophy.<br>
-      This is not dogma.<br>
-      This is not a cult.<br>
-      This is not a manifesto.<br>
-      This is not academic.<br>
-      This is not a movement.<br>
-      This is not a brand.<br>
-      This is not a book.<br>
-      This is not a system.<br>
-      This is not final.</p>
-
-      <p>While many of these themes appear in my writing, do not mistake them for anything other than a collection of personal reflections.<br>
-      These are the Musings of a Fool tracing around a circle with no center.</p>
-    </div>
-  </main>
+  <div class="title">Musings of a Fool</div>
+  <div class="content">
+    <p>This is not a religion.<br>
+    This is not doctrine.<br>
+    This is not the scaffolding for belief.<br>
+    This is not a church.<br>
+    This is not theology.<br>
+    This is not ideology.<br>
+    This is not philosophy.<br>
+    This is not dogma.<br>
+    This is not a cult.<br>
+    This is not a manifesto.<br>
+    This is not academic.<br>
+    This is not a movement.<br>
+    This is not a brand.<br>
+    This is not a book.<br>
+    This is not a system.<br>
+    This is not final.</p>
+    <p>While many of these themes appear in my writing, do not mistake them for anything other than a collection of personal reflections.<br>
+    These are the Musings of a Fool tracing around a circle with no center.</p>
+  </div>
 </body>
 </html>
