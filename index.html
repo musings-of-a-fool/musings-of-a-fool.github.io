@@ -19,6 +19,15 @@
   font-style: normal;
 }
 
+    @font-face {
+font-family: ‘TT Commons Pro Light’;
+src: url(’./TT-Commons-Pro-Light.woff’) format(‘woff’);
+font-weight: normal;
+font-style: normal;
+}
+
+
+
   body {
     margin: 0;
     padding: 0;
@@ -54,7 +63,11 @@
   display: flex;
   justify-content: flex-end;
   }
-  
+
+  .light-font {
+  font-family: ‘TT Commons Pro Light’, sans-serif;
+  }
+    
   .journal-button {
     background-color: white;
     border: 1px solid black;
@@ -88,14 +101,17 @@
       This is not a system.<br>
       This is not final.<br>
       </p>
-      <p>While my writing contains many of these themes,<br>
-      do not mistake it for anything other than what it is:</p>
-      <p>A collection of personal insights, reflections, and musings of a fool...<br>
-      ... tracing around a circle that has no center.</p>
+      <div class="light-font">
+        <p>While my writing contains many of these themes,<br>
+        do not mistake it for anything other than what it is:</p>
+        <p>A collection of personal insights, reflections, and musings of a fool...<br>
+        ... tracing around a circle that has no center.</p>
+      </div>
       <div class="button-container">
         <button class="journal-button" onclick="location.href='journal.html'">View Journal</button>
       </div>
     </div>
   </body>
+
   </html>
 
