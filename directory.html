@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Musings of a Fool</title>
+    <a class="title" href="index.html">Musings of a Fool</a>
     <style>
       @font-face {
         font-family: 'TT Commons Pro';
@@ -49,9 +49,13 @@
       }
 
       .title {
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
         font-family: 'TT Commons Pro DemiBold', sans-serif;
         font-size: 20px;
-        margin-bottom: 3rem;
+        text-decoration: none;      /* removes underline */
+        color: inherit;             /* inherits the existing text color */
       }
 
       .entry-list {
