@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musings of a Fool</title>
+    <style>
+      @font-face {
+        font-family: 'TT Commons Pro';
+        src: url('./TT-Commons-Pro-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'TT Commons Pro Medium';
+        src: url('./TT-Commons-Pro-Medium.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'TT Commons Pro DemiBold';
+        src: url('./TT-Commons-Pro-DemiBold.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'TT Commons Pro Light';
+        src: url('./TT-Commons-Pro-Light.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        margin: 0;
+        background-color: white;
+        color: black;
+        font-family: 'TT Commons Pro', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 100vh;
+        padding: 3rem 1.5rem 2rem;
+        font-size: 20px;
+        line-height: 1.6;
+      }
+
+      .title {
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+        font-family: 'TT Commons Pro DemiBold', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .back-link {
+        position: absolute;
+        top: 6rem;
+        left: 3rem;
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+        font-family: 'TT Commons Pro Light', sans-serif;
+      }
+
+      .content {
+        max-width: 700px;
+        margin-top: 8rem; /* allows space under the back link */
+        text-align: left;
+      }
+
+      .entry-title {
+        font-family: 'TT Commons Pro Medium', sans-serif;
+        font-size: 26px;
+        margin-bottom: 1rem;
+      }
+
+      .light-font {
+        font-family: 'TT Commons Pro Light', sans-serif;
+      }
+
+      em {
+        font-style: italic;
+      }
+
+      strong {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="title" href="index.html">Musings of a Fool</a>
+    <a class="back-link" href="journal.html">← Back to directory</a>
+
+    <div class="content">
+      <div class="entry-title">[Entry Title Here]</div>
+
+      <div class="light-font">
+        <p><em>This is an italicized paragraph example.</em></p>
+        <p><strong>This is bolded.</strong> And this is just regular text.</p>
+        <p>You can mix <em>italic</em> and <strong>bold</strong> in a sentence.</p>
+      </div>
+    </div>
+  </body>
+</html>
