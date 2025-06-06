@@ -131,11 +131,11 @@ People tend to conflate the concepts of "Source" and "God," but perhaps they sho
     <script>
       const el = document.getElementById('journal-entry');
       const raw = el.textContent;
-  
+    
       const formatted = raw
-        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')  // Bold
-        .replace(/\*(.*?)\*/g, '<em>$1</em>');             // Italic
-  
+        .replace(/\*\*(.*?)\*\*/g, '<span style="font-family: \'TT Commons Pro DemiBold\', sans-serif;">$1</span>')  // Bold
+        .replace(/\*(.*?)\*/g, '<span style="font-family: \'TT Commons Pro Italics\', sans-serif;">$1</span>');      // Italic
+    
       el.innerHTML = formatted;
     </script>
   </body>
