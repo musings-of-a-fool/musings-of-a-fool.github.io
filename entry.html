@@ -96,15 +96,24 @@
   <body>
     <a class="title" href="index.html">Musings of a Fool</a>
     <a class="back-link" href="directory.html">← Back</a>
-
-    <div class="content">
+  
+    <div class="content" style="white-space: pre-wrap; word-wrap: break-word;">
       <div class="entry-title">[Entry Title Here]</div>
-
-      <div class="light-font">
-        <p><em>This is an italicized paragraph example.</em></p>
-        <p><strong>This is bolded.</strong> And this is just regular text.</p>
-        <p>You can mix <em>italic</em> and <strong>bold</strong> in a sentence.</p>
+  
+      <div class="light-font" id="journal-entry">
+        Paste your raw text here, including *italic* or **bold** formatting.
       </div>
     </div>
+  
+    <script>
+      const el = document.getElementById('journal-entry');
+      const raw = el.textContent;
+  
+      const formatted = raw
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')  // Bold
+        .replace(/\*(.*?)\*/g, '<em>$1</em>');             // Italic
+  
+      el.innerHTML = formatted;
+    </script>
   </body>
 </html>
