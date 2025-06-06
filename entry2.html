@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musings of a Fool</title>
+    <style>
+      @font-face {
+        font-family: 'TT Commons Pro';
+        src: url('./TT-Commons-Pro-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'TT Commons Pro Medium';
+        src: url('./TT-Commons-Pro-Medium.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'TT Commons Pro DemiBold';
+        src: url('./TT-Commons-Pro-DemiBold.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'TT Commons Pro Light';
+        src: url('./TT-Commons-Pro-Light.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'TT Commons Pro Italics';
+        src: url('./TT-Commons-Pro-Italics.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        margin: 0;
+        background-color: white;
+        color: black;
+        font-family: 'TT Commons Pro', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 100vh;
+        padding: 3rem 1.5rem 2rem;
+        font-size: 20px;
+        line-height: 1.6;
+      }
+
+      .title {
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+        font-family: 'TT Commons Pro DemiBold', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .back-link {
+        position: absolute;
+        top: 6rem;
+        left: 3rem;
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+        font-family: 'TT Commons Pro Light', sans-serif;
+      }
+
+      .content {
+        max-width: 700px;
+        margin-top: 8rem; /* allows space under the back link */
+        text-align: left;
+      }
+
+      .entry-title {
+        font-family: 'TT Commons Pro Medium', sans-serif;
+        font-size: 26px;
+        margin-bottom: 1rem;
+      }
+
+      .light-font {
+        font-family: 'TT Commons Pro Light', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="title" href="index.html">Musings of a Fool</a>
+    <a class="back-link" href="directory.html">← Back</a>
+
+
+
+
+
+    
+    <div class="content" style="white-space: pre-wrap; word-wrap: break-word;">
+      <div class="entry-title">Juxtaposed Dimensions</div>
+  
+      <div class="light-font" id="journal-entry">
+        When a dense region of the totality twists in local regions of local densities, different relativistic scales for “base units” emerge. At the reference scale of humans, our atoms collectively construct a perceptual feedback mechanism that perceives its own base unit from a transcended perspective. We are made of atoms and we perceive atoms— but from the relativistically macroscopic scale and not at the atomic scale. In this way, the atoms create a mechanism to see beyond their own relativistic scale. At the human scale, we sit at the boundary between two densities — solid and gas. Our perceptual system is constructed of solid, but it looks out into the non-solid. These boundaries… gaps… interfaces.. between clusters of densities are where conscious recursion has purpose to form. So then… if humans exist between solid and air.. and fish exist between solid and liquid.. what lifeforms exist between gas and plasma or liquid and gas? Perhaps a kind that our physical forms have no sensory mechanisms to detect or interact with. 
+
+Perhaps, just as we are categorically unable to perceive the inner swirling of these liminal interfaces, the same is true from such an entity's perspective "on the others side." Where what we perceive as mere gas—too ubiquitous to perceive any internal or identifiable behavior, "they" perceive us as super-solids, unable to differentiate us from our surrounding medium. In this way, perhaps parallel dimensions are more present than they seem. One not "somewhere else but almost identical" but one that is juxtaposed over and under our current, physical reality. 
+      
+      
+      
+      
+      
+      
+      </div>
+    </div>
+  
+    <script>
+      const el = document.getElementById('journal-entry');
+      const raw = el.textContent;
+    
+      const formatted = raw
+        .replace(/\*\*(.*?)\*\*/g, '<span style="font-family: \'TT Commons Pro DemiBold\', sans-serif;">$1</span>')  // Bold
+        .replace(/\*(.*?)\*/g, '<span style="font-family: \'TT Commons Pro Italics\', sans-serif;">$1</span>');      // Italic
+    
+      el.innerHTML = formatted;
+    </script>
+  </body>
+</html>
