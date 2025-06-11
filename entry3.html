@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musings of a Fool</title>
+    <style>
+      @font-face {
+        font-family: 'TT Commons Pro';
+        src: url('./TT-Commons-Pro-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'TT Commons Pro Medium';
+        src: url('./TT-Commons-Pro-Medium.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'TT Commons Pro DemiBold';
+        src: url('./TT-Commons-Pro-DemiBold.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'TT Commons Pro Light';
+        src: url('./TT-Commons-Pro-Light.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'TT Commons Pro Italics';
+        src: url('./TT-Commons-Pro-Italics.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        margin: 0;
+        background-color: white;
+        color: black;
+        font-family: 'TT Commons Pro', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 100vh;
+        padding: 3rem 1.5rem 2rem;
+        font-size: 20px;
+        line-height: 1.6;
+      }
+
+      .title {
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+        font-family: 'TT Commons Pro DemiBold', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .back-link {
+        position: absolute;
+        top: 6rem;
+        left: 3rem;
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+        font-family: 'TT Commons Pro Light', sans-serif;
+      }
+
+      .content {
+        max-width: 700px;
+        margin-top: 8rem;
+        text-align: left;
+      }
+
+      .entry-title {
+        font-family: 'TT Commons Pro Medium', sans-serif;
+        font-size: 26px;
+        margin-bottom: 1rem;
+      }
+
+      .light-font {
+        font-family: 'TT Commons Pro Light', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="title" href="index.html">Musings of a Fool</a>
+    <a class="back-link" href="directory.html">← Back</a>
+
+
+
+
+
+    
+    <div class="content" style="white-space: pre-wrap; word-wrap: break-word;">
+      <div class="entry-title">An Encounter with Light</div>
+  
+      <div class="light-font" id="journal-entry">
+        *May 2024*
+I was outside of my house with my dog so he could pee. It had rained earlier in the day and was very foggy. The sun had set and the the air was thick. My house is on an east facing mountain and is heavily forested. The fog clouds were very low— not just a cloud in the sky, but ones that I was fully immersed in, along with more fog clouds no more than 50-100 feet above me. I have seen lights in the sky before, but this one was large and was intimately close to me. It wasn’t a point, it was the size of a basketball from my vantage point. Given the distance, I estimate the actual size to be rather large. 
+
+I looked up to the fog while my dog was peeing and as soon as I did, the fog cloud directly above me lit up. A light, pulsing within the fog. It was jittery— a sort of flashing without ever fully extinguishing. The fog was thick so I could not see the outline of the light, but there was a rough circular blob of the most brightness in the center of the fog. Whatever the source was, it was nested in the cloud itself. The fog provided a volumetric medium and there was no mistaking that the light was within the fog itself and not merely shining through it. 
+
+It remained there for 10 seconds and I did not move. I began to walk more as my dog sniffed around the ground while I continued to look up. The light was tracking my movement and remained directly over me as I walked around for another 15 seconds or so. 
+
+I was fixated on it. In my mind I thought “i see you. You should not be here. The father has sanctified my mind and Christ has shown me the truth. You cannot deceive me- be gone.”
+
+In an instant, the light was gone. 
+
+What was this? Have I commanded away an entity? Was it trickery? Or was it benevolent and respecting my free will? Was it sentient or did it simply appear sentient? 
+      
+      
+      
+      
+      
+      </div>
+    </div>
+  
+    <script>
+      const el = document.getElementById('journal-entry');
+      const raw = el.textContent;
+    
+      const formatted = raw
+        .replace(/\*\*(.*?)\*\*/g, '<span style="font-family: \'TT Commons Pro DemiBold\', sans-serif;">$1</span>')  // Bold
+        .replace(/\*(.*?)\*/g, '<span style="font-family: \'TT Commons Pro Italics\', sans-serif;">$1</span>');      // Italic
+    
+      el.innerHTML = formatted;
+    </script>
+  </body>
+</html>
