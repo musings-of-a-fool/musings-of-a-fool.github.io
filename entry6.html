@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1LNTS4PWBD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1LNTS4PWBD');
+    </script>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @font-face {
+        font-family: 'TT Commons Pro';
+        src: url('./TT-Commons-Pro-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'TT Commons Pro Medium';
+        src: url('./TT-Commons-Pro-Medium.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'TT Commons Pro DemiBold';
+        src: url('./TT-Commons-Pro-DemiBold.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'TT Commons Pro Light';
+        src: url('./TT-Commons-Pro-Light.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'TT Commons Pro Italics';
+        src: url('./TT-Commons-Pro-Italics.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      body {
+        margin: 0;
+        background-color: white;
+        color: black;
+        font-family: 'TT Commons Pro', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 100vh;
+        padding: 2rem 3rem 2rem;
+        font-size: 20px;
+        line-height: 1.6;
+      }
+
+      .header {
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+        font-family: 'TT Commons Pro DemiBold', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .back-link {
+        position: absolute;
+        top: 6rem;
+        left: 3rem;
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+        font-family: 'TT Commons Pro Light', sans-serif;
+      }
+
+      .content {
+        max-width: 700px;
+        margin-top: 8rem;
+        text-align: left;
+      }
+
+      .title {
+        font-family: 'TT Commons Pro Medium', sans-serif;
+        font-size: 26px;
+        margin-bottom: 1rem;
+      }
+
+      .light-font {
+        font-family: 'TT Commons Pro Light', sans-serif;
+      }
+    </style>
+
+    <title>Prayer 1</title>
+    
+  </head>
+  <body>
+    <a class="header" href="index.html">Musings of a Fool</a>
+    <a class="back-link" href="directory.html">← Back</a>
+
+    <div class="content" style="white-space: pre-wrap; word-wrap: break-word;">
+      
+      <div class="title">Prayer 1</div>
+  
+      <div class="light-font" id="journal-entry">
+Father, thank you for working through me. This journey you’ve sent me on is the most beautiful experience beyond words. I now see clearly. Even though I’ve always known that this was never about the result, I still found myself wondering “Am I just chasing my imagination?” But now.. I see clearly. 
+
+The point of music is not just the last note. It is all of the notes. And the silence between the notes. It *is* the dance— all together.  You showed me how to walk by faith. You showed me how to love. You showed me purpose. You showed me that you have been there the entire time, walking alongside me holding the torch.   
+
+You showed me that it does not matter if the work “works” or if it completely fails. Because it was never about the last note. You showed me that it does not matter if *no one* ever understands anything I’m doing. Because *I* know you are there and have been guiding me toward discovery since the very beginning. Not scientific discovery, but discovery of myself and true union with you. 
+
+You showed me what true communion really is. You showed me how to live authentically. You showed me *why* to live authentically. 
+
+The value was never about invention; it was never about proving the works of faith… it was-and it is— about revealing who you are *through* faith. You led me through ideas, failures, psychosis, delusion, and doubt. And now I see that it is truly irrelevant whether or not each “step” of the process is “true”— the important part was always that the space *between* the steps was authentic and faithful. 
+
+To not fear being the fool- but to be the fool *faithfully.* 
+
+I feel presence deep within me. It is guiding me, it is showing me. What bliss this is— I just wish the whole world to feel and know it with the same strength you have shown me… this peace; this certainty. I come from non-belief, yet here I am. I did not come to inherit religion— I came to know you directly. Not through study, but through radical surrender. And here I am. I did not learn of You through scripture alone— but you revealed yourself to me directly. Not through words, but through design, structure, geometry, silence, and presence. There is beauty, elegance, and absolute divine intelligence in what I have witnessed and I cannot deny it. Through these hands, these eyes, this creation, I now see. 
+ 
+You were never leading me to invention- *you were leading me to you.*
+      
+      
+      
+      </div>
+    </div>
+  
+    <script>
+      const el = document.getElementById('journal-entry');
+      const raw = el.textContent;
+    
+      const formatted = raw
+        .replace(/\*\*(.*?)\*\*/g, '<span style="font-family: \'TT Commons Pro DemiBold\', sans-serif;">$1</span>')  // Bold
+        .replace(/\*(.*?)\*/g, '<span style="font-family: \'TT Commons Pro Italics\', sans-serif;">$1</span>');      // Italic
+    
+      el.innerHTML = formatted;
+    </script>
+  </body>
+</html>
