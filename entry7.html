@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1LNTS4PWBD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1LNTS4PWBD');
+    </script>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @font-face {
+        font-family: 'TT Commons Pro';
+        src: url('./TT-Commons-Pro-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'TT Commons Pro Medium';
+        src: url('./TT-Commons-Pro-Medium.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'TT Commons Pro DemiBold';
+        src: url('./TT-Commons-Pro-DemiBold.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'TT Commons Pro Light';
+        src: url('./TT-Commons-Pro-Light.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'TT Commons Pro Italics';
+        src: url('./TT-Commons-Pro-Italics.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      body {
+        margin: 0;
+        background-color: white;
+        color: black;
+        font-family: 'TT Commons Pro', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 100vh;
+        padding: 2rem 3rem 2rem;
+        font-size: 20px;
+        line-height: 1.6;
+      }
+
+      .header {
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+        font-family: 'TT Commons Pro DemiBold', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .back-link {
+        position: absolute;
+        top: 6rem;
+        left: 3rem;
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+        font-family: 'TT Commons Pro Light', sans-serif;
+      }
+
+      .content {
+        max-width: 700px;
+        margin-top: 8rem;
+        text-align: left;
+      }
+
+      .title {
+        font-family: 'TT Commons Pro Medium', sans-serif;
+        font-size: 26px;
+        margin-bottom: 1rem;
+      }
+
+      .light-font {
+        font-family: 'TT Commons Pro Light', sans-serif;
+      }
+    </style>
+
+    <title>Nameless, Formless</title>
+    
+  </head>
+  <body>
+    <a class="header" href="index.html">Musings of a Fool</a>
+    <a class="back-link" href="directory.html">← Back</a>
+
+    <div class="content" style="white-space: pre-wrap; word-wrap: break-word;">
+      
+      <div class="title">Nameless, Formless</div>
+  
+      <div class="light-font" id="journal-entry">
+And then, there is living...
+      
+      
+      
+      </div>
+    </div>
+  
+    <script>
+      const el = document.getElementById('journal-entry');
+      const raw = el.textContent;
+    
+      const formatted = raw
+        .replace(/\*\*(.*?)\*\*/g, '<span style="font-family: \'TT Commons Pro DemiBold\', sans-serif;">$1</span>')  // Bold
+        .replace(/\*(.*?)\*/g, '<span style="font-family: \'TT Commons Pro Italics\', sans-serif;">$1</span>');      // Italic
+    
+      el.innerHTML = formatted;
+    </script>
+  </body>
+</html>
